@@ -1,5 +1,5 @@
 "use client";
-import { ItemsQ } from "@/assets/Quran-Json/Quran";
+import { ItemsQ } from "../Quran";
 import QCard from "../../component/QCard";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
