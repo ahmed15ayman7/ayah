@@ -16,7 +16,7 @@ import { ItemsQ } from "../al-quran/Quran";
 import { Button, Card } from "react-bootstrap";
 import { useRouter } from "next/navigation";
 
-const SwiperQ_A = ({ n }: { n: number }) => {
+const SwiperQ_A = ({ n }) => {
   let navigate = useRouter();
 
   const breakpoints = {
