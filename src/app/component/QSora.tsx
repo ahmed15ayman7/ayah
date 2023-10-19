@@ -1,5 +1,5 @@
 "use client";
-import { ItemsQ } from "../../assets/Quran-Json/Quran";
+import { ItemsQ } from "@/assets/Quran-Json/Quran";
 import { useParams, useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 import { Howl } from "howler";

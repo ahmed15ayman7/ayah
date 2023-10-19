@@ -12,7 +12,7 @@ import {
   Scrollbar,
   A11y,
 } from "swiper/modules";
-import { ItemsQ } from "../../assets/Quran-Json/Quran";
+import { ItemsQ } from "@/assets/Quran-Json/Quran";
 import { Button, Card } from "react-bootstrap";
 import { useRouter } from "next/navigation";
 
