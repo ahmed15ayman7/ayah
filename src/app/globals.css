@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 82px !important;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(45deg, #ec8729, #edaf75, #ec8729);
+  color: #000;
+  direction: rtl;
+}
+
+.myfont {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.btn-Q {
+  color: #000;
+  background-image: linear-gradient(45deg, #ec8729, #edaf75, #ec8729);
+  border: 1px solid #fff !important;
+  transition: all 0.31s;
+}
+.btn-Q.anim {
+  animation: overview-2 1s linear 1s alternate;
+}
+.btn-Q:hover {
+  box-shadow: 0px 0px 10px 2px #edaf75;
+  transform: scale(1.1);
+}
+
+.CNAV {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 10px #000;
+}
+.CNAV .NB {
+  text-decoration: none;
+}
+.CNAV .nv-link .nav-link {
+  font-family: "Reem Kufi Ink", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.CNAV .nv-link .nav-link:hover {
+  color: rgb(45, 45, 45);
+}
+
+.overview {
+  position: relative;
+}
+.overview .overview-mask {
+  direction: rtl;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, transparent, transparent, rgba(0, 0, 0, 0.7), #000000);
+  z-index: 1000;
+}
+.overview .overview-mask .details-o {
+  height: 100%;
+  width: 50%;
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overview .overview-mask .details-o h1 {
+  animation: overview 1s linear 1s alternate;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.CardQ {
+  font-family: "Reem Kufi Ink", sans-serif;
+  background-color: #FFFFFF;
+  border-radius: 25px !important;
+  box-shadow: 0 0 25px 0 #3D3D3D;
+}
+.CardQ:not(.CS) {
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.CardQ:not(.CS):hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  min-height: 20vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Reem Kufi", sans-serif;
+  color: #FFFFFF;
+  justify-content: space-evenly;
+}
+.footer .pages h1 {
+  text-shadow: 2px 2px #000000;
+}
+.footer .pages h4 {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+@keyframes overview {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes overview-2 {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+img {
+  width: 100%;
+  height: 80vh;
+  z-index: 10;
+}/*# sourceMappingURL=globals.css.map */
